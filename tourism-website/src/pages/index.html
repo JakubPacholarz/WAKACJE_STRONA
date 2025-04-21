@@ -3,56 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Explore the World</title>
     <link rel="stylesheet" href="../assets/css/styles.css">
+    <title>Travel Agency - Home</title>
 </head>
 <body>
     <!-- Header -->
-    <header>
+    <div id="header">
         <!-- Include header component -->
-        <div id="header-placeholder"></div>
-    </header>
+        <div class="navbar">
+            <a href="index.html" class="logo">Travel Agency</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </div>
 
-    <!-- Navigation Bar -->
-    <nav>
-        <!-- Include navbar component -->
-        <div id="navbar-placeholder"></div>
-    </nav>
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Explore the World with Us</h1>
+        <p>Your dream vacation is just a click away.</p>
+        <a href="services.html" class="btn">Discover More</a>
+    </section>
 
-    <!-- Main Content -->
-    <main>
-        <section class="hero">
-            <h1>Welcome to Our Travel Agency</h1>
-            <p>Your adventure starts here. Explore the best destinations around the globe.</p>
-            <a href="destinations.html" class="btn">Discover More</a>
-        </section>
-
-        <section class="highlights">
-            <h2>Featured Destinations</h2>
-            <div class="destination-card">
-                <img src="../images/destination1.jpg" alt="Destination 1">
-                <h3>Beach Paradise</h3>
-                <p>Relax on the beautiful beaches of the Caribbean.</p>
+    <!-- Featured Destinations -->
+    <section class="destinations">
+        <h2>Featured Destinations</h2>
+        <div class="destination-grid">
+            <div class="destination">
+                <img src="../assets/images/paris.jpg" alt="Paris">
+                <h3>Paris</h3>
             </div>
-            <div class="destination-card">
-                <img src="../images/destination2.jpg" alt="Destination 2">
-                <h3>Mountain Retreat</h3>
-                <p>Experience the tranquility of the mountains.</p>
+            <div class="destination">
+                <img src="../assets/images/maldives.jpg" alt="Maldives">
+                <h3>Maldives</h3>
             </div>
-            <div class="destination-card">
-                <img src="../images/destination3.jpg" alt="Destination 3">
-                <h3>Cultural City</h3>
-                <p>Immerse yourself in the rich culture of Europe.</p>
+            <div class="destination">
+                <img src="../assets/images/newyork.jpg" alt="New York">
+                <h3>New York</h3>
             </div>
-        </section>
-    </main>
+        </div>
+    </section>
 
     <!-- Footer -->
     <footer>
-        <!-- Include footer component -->
-        <div id="footer-placeholder"></div>
+        <p>&copy; 2025 Travel Agency. All rights reserved.</p>
     </footer>
-
-    <script src="../assets/js/scripts.js"></script>
 </body>
 </html>

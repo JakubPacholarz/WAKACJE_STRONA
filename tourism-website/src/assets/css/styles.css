@@ -1,3 +1,4 @@
+/* General Styles */
 body {
     font-family: 'Arial', sans-serif;
     margin: 0;
@@ -5,57 +6,111 @@ body {
     line-height: 1.6;
 }
 
-header {
-    background: #4CAF50;
-    color: #fff;
-    padding: 20px 0;
-    text-align: center;
+h1, h2, h3 {
+    margin: 0;
 }
 
-nav {
-    display: flex;
-    justify-content: center;
-    background: #333;
-}
-
-nav a {
-    color: #fff;
-    padding: 15px 20px;
+a {
     text-decoration: none;
-    text-align: center;
+    color: inherit;
 }
 
-nav a:hover {
-    background: #ddd;
-    color: #333;
-}
-
-.container {
-    width: 80%;
-    margin: auto;
-    overflow: hidden;
-}
-
-.footer {
-    background: #4CAF50;
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #333;
     color: #fff;
-    text-align: center;
-    padding: 10px 0;
-    position: relative;
-    bottom: 0;
-    width: 100%;
 }
 
-@media (max-width: 768px) {
-    nav {
-        flex-direction: column;
-    }
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
 
-    nav a {
-        padding: 10px;
-    }
+.nav-links li a {
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
 
-    .container {
-        width: 95%;
-    }
+.nav-links li a:hover {
+    background-color: #555;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 5rem 2rem;
+    background: url('../assets/images/hero.jpg') no-repeat center center/cover;
+    color: #fff;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.hero .btn {
+    padding: 0.8rem 2rem;
+    background-color: #ff6f61;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.hero .btn:hover {
+    background-color: #ff4a3d;
+}
+
+/* Destinations Section */
+.destinations {
+    padding: 2rem;
+    text-align: center;
+}
+
+.destination-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
+}
+
+.destination {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    transition: transform 0.3s;
+}
+
+.destination img {
+    width: 100%;
+    height: auto;
+}
+
+.destination h3 {
+    padding: 1rem;
+    background-color: #f4f4f4;
+}
+
+.destination:hover {
+    transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #333;
+    color: #fff;
 }
