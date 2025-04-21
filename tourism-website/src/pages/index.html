@@ -1,63 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../assets/css/styles.css">
-    <link rel="icon" href="../assets/images/favicon.ico" type="image/x-icon">
-    <title>Travel Agency - Home</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../assets/css/styles.css" />
+  <link rel="icon" href="../assets/images/favicon.ico" type="image/x-icon" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <title>Wakacje Marzeń</title>
 </head>
 <body>
-    <!-- Preloader -->
-    <div id="preloader">
-        <div class="spinner"></div>
+  <div id="preloader">
+    <div class="spinner"></div>
+  </div>
+
+  <header id="header">
+    <nav class="navbar">
+      <div class="logo">Wakacje 2025</div>
+      <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="about.html">O nas</a></li>
+        <li><a href="destinations.html">Miejsca</a></li>
+        <li><a href="contact.html">Kontakt</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Twoje wymarzone wakacje czekają</h1>
+      <p>Odkrywaj piękne miejsca razem z nami!</p>
+      <a href="destinations.html" class="btn">Zobacz oferty</a>
     </div>
+  </section>
 
-    <!-- Header -->
-    <header id="header">
-        <div class="navbar">
-            <a href="index.html" class="logo">Travel Agency</a>
-            <button id="dark-mode-toggle" aria-label="Toggle Dark Mode">🌙</button>
-            <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </div>
-    </header>
+  <section class="destinations">
+    <h2>Popularne Kierunki</h2>
+    <div class="cards">
+      <div class="card">
+        <img src="../images/beach.jpg" alt="Plaża" />
+        <h3>Malediwy</h3>
+        <p>Egzotyczne plaże i lazurowa woda</p>
+      </div>
+      <div class="card">
+        <img src="../images/mountains.jpg" alt="Góry" />
+        <h3>Alpy</h3>
+        <p>Wędrówki i zapierające dech widoki</p>
+      </div>
+      <div class="card">
+        <img src="../images/city.jpg" alt="Miasto" />
+        <h3>Paryż</h3>
+        <p>Romantyczne spacery i kultura</p>
+      </div>
+    </div>
+  </section>
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <h1>Explore the World with Us</h1>
-        <p>Your dream vacation is just a click away.</p>
-        <a href="services.html" class="btn">Discover More</a>
-    </section>
-
-    <!-- Featured Destinations -->
-    <section class="destinations">
-        <h2>Featured Destinations</h2>
-        <div class="destination-grid">
-            <div class="destination">
-                <img src="../assets/images/paris.webp" alt="Paris" loading="lazy">
-                <h3>Paris</h3>
-            </div>
-            <div class="destination">
-                <img src="../assets/images/maldives.webp" alt="Maldives" loading="lazy">
-                <h3>Maldives</h3>
-            </div>
-            <div class="destination">
-                <img src="../assets/images/newyork.webp" alt="New York" loading="lazy">
-                <h3>New York</h3>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2025 Travel Agency. All rights reserved.</p>
-    </footer>
-
-    <script src="../assets/js/scripts.js"></script>
+  <footer>
+    <p>&copy; 2025 Wakacje z Pasją. Wszelkie prawa zastrzeżone.</p>
+  </footer>
 </body>
 </html>
