@@ -4,14 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../assets/css/styles.css">
+    <link rel="icon" href="../assets/images/favicon.ico" type="image/x-icon">
     <title>Travel Agency - Home</title>
 </head>
 <body>
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="spinner"></div>
+    </div>
+
     <!-- Header -->
-    <div id="header">
-        <!-- Include header component -->
+    <header id="header">
         <div class="navbar">
             <a href="index.html" class="logo">Travel Agency</a>
+            <button id="dark-mode-toggle" aria-label="Toggle Dark Mode">🌙</button>
             <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
@@ -19,7 +25,7 @@
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </div>
-    </div>
+    </header>
 
     <!-- Hero Section -->
     <section class="hero">
@@ -33,15 +39,15 @@
         <h2>Featured Destinations</h2>
         <div class="destination-grid">
             <div class="destination">
-                <img src="../assets/images/paris.jpg" alt="Paris">
+                <img src="../assets/images/paris.webp" alt="Paris" loading="lazy">
                 <h3>Paris</h3>
             </div>
             <div class="destination">
-                <img src="../assets/images/maldives.jpg" alt="Maldives">
+                <img src="../assets/images/maldives.webp" alt="Maldives" loading="lazy">
                 <h3>Maldives</h3>
             </div>
             <div class="destination">
-                <img src="../assets/images/newyork.jpg" alt="New York">
+                <img src="../assets/images/newyork.webp" alt="New York" loading="lazy">
                 <h3>New York</h3>
             </div>
         </div>
@@ -51,5 +57,7 @@
     <footer>
         <p>&copy; 2025 Travel Agency. All rights reserved.</p>
     </footer>
+
+    <script src="../assets/js/scripts.js"></script>
 </body>
 </html>
