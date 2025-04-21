@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <title>Destinations - Tourism Website</title>
+</head>
+<body>
+    <!-- Header -->
+    <div id="header">
+        <!-- Include header component -->
+        <?php include '../components/header.html'; ?>
+    </div>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <!-- Include navbar component -->
+        <?php include '../components/navbar.html'; ?>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <h1>Explore Our Destinations</h1>
+        <section class="destination-list">
+            <article class="destination">
+                <h2>Paris, France</h2>
+                <img src="../images/paris.jpg" alt="Eiffel Tower in Paris">
+                <p>Experience the romance of Paris, the city of lights. Visit iconic landmarks like the Eiffel Tower and Louvre Museum.</p>
+                <a href="paris-details.html">Learn more</a>
+            </article>
+            <article class="destination">
+                <h2>Tokyo, Japan</h2>
+                <img src="../images/tokyo.jpg" alt="Tokyo skyline">
+                <p>Discover the vibrant culture of Tokyo, where tradition meets modernity. Explore temples, gardens, and bustling streets.</p>
+                <a href="tokyo-details.html">Learn more</a>
+            </article>
+            <article class="destination">
+                <h2>New York City, USA</h2>
+                <img src="../images/nyc.jpg" alt="Times Square in New York City">
+                <p>Experience the energy of New York City, from Times Square to Central Park. A city that never sleeps awaits you.</p>
+                <a href="nyc-details.html">Learn more</a>
+            </article>
+            <!-- Add more destinations as needed -->
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <!-- Include footer component -->
+        <?php include '../components/footer.html'; ?>
+    </footer>
+
+    <script src="../assets/js/scripts.js"></script>
+</body>
+</html>
