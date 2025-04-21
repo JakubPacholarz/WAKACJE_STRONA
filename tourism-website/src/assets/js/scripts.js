@@ -1,7 +1,4 @@
-// Preloader
-window.addEventListener('load', () => {
-    document.getElementById('preloader').style.display = 'none';
-});
+document.getElementById('preloader').style.display = 'none';
 
 // Dark Mode Toggle
 const toggle = document.getElementById('dark-mode-toggle');
